@@ -1,0 +1,15 @@
+<div class="mx-20 mt-10">
+    <h3>Buscar:</h3>
+</div>
+
+<div class="flex mx-10 gap-2" >
+    <input 
+      name="search"
+      type="text"
+      class="shadow-md p-2 rounded-md w-full  "
+      placeholder="Buscar Gif"
+      (keyup.enter)="searchGifs(searchInput.value)"
+      #searchInput
+    > 
+  
+</div>

@@ -1,0 +1,19 @@
+
+<div *ngFor="let gif of gifs" class="grid grid-cols-4 mx-5 mt-5">
+        <div class="flex justify-center items-center">
+              
+                        <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                <a href="#!">
+                                        <img class="rounded-t-lg w-full" [src]='gif.images.fixed_height.url' alt="" />
+                                </a>
+                                <div class="p-6">
+                                        <h5
+                                                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                                {{gif.title}}
+                                        </h5>
+                                </div>
+                        </div>
+        
+        </div>
+</div>
+
